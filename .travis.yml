@@ -3,7 +3,8 @@ php:
   - 5.5
 
 # Commands to be run before your environment runs.
-before_script:
+#before_script:
+install:
   - composer install --prefer-source --no-interaction --dev
 
 # Commands you want to run that will verify your build.
