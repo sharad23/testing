@@ -15,10 +15,6 @@ class FoodsControllerTest extends TestCase {
     	  $this->mock->shouldReceive('finds')
                    ->andReturn('foo');
         $this->app->instance('Food', $this->mock);
-        
-     
-        
-        
         $response = $this->call('GET', '/foods/5');
         $this->assertViewHas('food','foo');
       
